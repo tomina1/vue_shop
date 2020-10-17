@@ -1,7 +1,14 @@
-// import axios from 'axios'
+// const res = await this.$http.request({
+//     url: "/",
+//     method: "get",
+//     params: {  
+//     }
+//   });
 
-// const http=axios.create({
-//     baseURL: 'http://112.74.99.5:3000/web/api'
+// let res= await this.$http.request({
+//     url:'/',
+//     method:'post',
+//     data:this.model
 // })
 
 import axios from 'axios'
