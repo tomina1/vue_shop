@@ -1,6 +1,6 @@
 export default{
     baseUrl:{
-        dev:"http://112.74.99.5:3000/web/api",
+        dev:"http://127.0.0.1:8888/api/private/v1/",
         pro:""
     }
 }
