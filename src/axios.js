@@ -1,16 +1,15 @@
-// const res = await this.$http.request({
+// const res = await this.$axios.request({
 //     url: "/",
 //     method: "get",
 //     params: {  
 //     }
 //   });
 
-// let res= await this.$http.request({
+// let res= await this.$axios.request({
 //     url:'/',
 //     method:'post',
 //     data:this.model
 // })
-
 import axios from 'axios'
 import config from '@/config/config'
 import router from '@/router'
