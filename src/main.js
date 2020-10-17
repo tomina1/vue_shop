@@ -5,7 +5,7 @@ import store from './store'
 import axios from './axios.js'
 import 'element-ui/lib/theme-chalk/index.css'
 import ElementUI from 'element-ui';
-import '@/assets/css/global.css'
+import '@/assets/css/global.css';
 let {Message}=ElementUI
 Vue.use(ElementUI)
 Vue.config.productionTip = false

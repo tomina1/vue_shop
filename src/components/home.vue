@@ -15,7 +15,7 @@
 		methods: {
 			outline() {
 				sessionStorage.removeItem('token')
-				this.$router.push('/login')
+				this.$router.push('/login');
 			}
 		}
 	}

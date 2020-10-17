@@ -70,7 +70,7 @@
 					} = await this.$axios.request({
 						url: '/login',
 						method: 'post',
-						data: this.loginForm
+						data: this.loginForm,
 					})
 					console.log(res)
 					if (res.meta.status !== 200) {
