@@ -30,9 +30,9 @@ class HttpRequest{
             headers:{
                 
             }
-        }
-        if(localStorage.getItem('token') && localStorage.getItem('id')){
-            config.headers.Authorization='Bearer '+localStorage.getItem('token')
+        }//sessionStorage
+        if(sessionStorage.getItem('token')){
+            config.headers.Authorization=sessionStorage.getItem('token')
         }
         return config
     }
