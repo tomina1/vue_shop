@@ -1,10 +1,8 @@
 <template>
-<<<<<<< HEAD
 	<div class="home_container">
 
 		<el-button type="info" @click="outline">login</el-button>
 	</div>
-=======
 	<el-container class="home_container">
 		<!-- 主体头部区域 -->
 		<el-header>
@@ -41,16 +39,12 @@
 			</el-main>
 		</el-container>
 	</el-container>
->>>>>>> login
 </template>
 
 <script>
 	export default {
 		data() {
 			return {
-<<<<<<< HEAD
-
-=======
 				menuList: [],
 				iconlist:{
 					'125':'el-icon-s-custom',
@@ -62,16 +56,13 @@
 				isCollapse:false,
 				//被激活的连接地址
 				activePath:''
->>>>>>> login
 			}
 		},
 		methods: {
 			outline() {
 				sessionStorage.removeItem('token')
 				this.$router.push('/login');
-<<<<<<< HEAD
 			}
-=======
 			},
 			async getMenuList() {
 				const {
@@ -99,14 +90,11 @@
 		created() {
 			this.getMenuList()
 			this.activePath=sessionStorage.getItem('activePath')
->>>>>>> login
 		}
 	}
 </script>
 
 <style lang="less" scoped>
-<<<<<<< HEAD
-=======
 	.home_container {
 		height: 100%;
 	}
@@ -153,5 +141,4 @@
 		letter-spacing: 0.2em;
 		cursor: pointer;
 	}
->>>>>>> login
 </style>

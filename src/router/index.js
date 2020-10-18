@@ -13,16 +13,13 @@ const routes = [{
 	},
 	{
 		path: '/home',
-<<<<<<< HEAD
 		component: () => import('@/components/home.vue')
-=======
 		component: () => import('@/components/home.vue'),
 		redirect:'/welcome',//到这个页面重定向到welcome页面
 		children:[
 			{path:'/welcome',component:()=> import('@/components/Welcome.vue')},
 			{path:'/users',component:()=> import('@/components/user/User.vue')}
 		]
->>>>>>> login
 	}
 ]
 
