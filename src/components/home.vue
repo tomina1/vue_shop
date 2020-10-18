@@ -1,8 +1,5 @@
 <template>
 	<div class="home_container">
-
-		<el-button type="info" @click="outline">login</el-button>
-	</div>
 	<el-container class="home_container">
 		<!-- 主体头部区域 -->
 		<el-header>
@@ -39,6 +36,7 @@
 			</el-main>
 		</el-container>
 	</el-container>
+	</div>
 </template>
 
 <script>
@@ -62,7 +60,6 @@
 			outline() {
 				sessionStorage.removeItem('token')
 				this.$router.push('/login');
-			}
 			},
 			async getMenuList() {
 				const {
