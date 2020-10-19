@@ -20,7 +20,8 @@ const routes = [{
 			{path:'/welcome',component:()=> import('@/components/Welcome.vue')},
 			{path:'/users',component:()=> import('@/components/user/User.vue')},
 			{path:'/rights',component:()=>import('@/components/power/Rights.vue')},
-			{path:'/roles',component:()=>import('@/components/power/Roles.vue')}
+			{path:'/roles',component:()=>import('@/components/power/Roles.vue')},
+			{path:'/categories',component:()=>import('@/components/goods/Cate.vue')}
 		]
 	}
 ]
