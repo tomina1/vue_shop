@@ -232,7 +232,7 @@
 					if (res.meta.status !== 201) {
 						return this.$Message.error('添加分类失败')
 					}
-					console.log(res.data)
+					//console.log(res.data)
 					this.$Message.success('添加分类成功')
 					// if(this.addCateForm.cat_level==0){
 					// 	this.cateList.push(res.data);
