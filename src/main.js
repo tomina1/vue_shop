@@ -15,6 +15,10 @@ import 'quill/dist/quill.bubble.css' // for bubble theme
 //全局注册富文本
 Vue.use(VueQuillEditor)
 
+import 'vue-area-linkage/dist/index.css'; // v2 or higher
+import VueAreaLinkage from 'vue-area-linkage';
+Vue.use(VueAreaLinkage)
+
 let {Message,MessageBox}=ElementUI
 Vue.use(ElementUI)
 Vue.config.productionTip = false

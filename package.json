@@ -7,11 +7,13 @@
     "build": "vue-cli-service build"
   },
   "dependencies": {
+    "area-data": "^5.0.6",
     "axios": "^0.20.0",
     "core-js": "^3.6.5",
     "element-ui": "^2.13.2",
     "lodash": "^4.17.20",
     "vue": "^2.6.11",
+    "vue-area-linkage": "^5.1.0",
     "vue-quill-editor": "^3.0.6",
     "vue-router": "^3.2.0",
     "vue-table-with-tree-grid": "^0.2.4",
