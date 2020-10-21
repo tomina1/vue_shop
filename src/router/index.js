@@ -1,6 +1,5 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Login from '@/components/Login.vue'
 Vue.use(VueRouter)
 
 const routes = [{
@@ -9,24 +8,27 @@ const routes = [{
 	},
 	{
 		path: '/login',
-		component: Login
+		component: ()=>import(/* webpackChunkName: "login_home_welcome" */ '@/components/Login.vue')
 	},
 	{
 		path: '/home',
-		component: () => import('@/components/home.vue'),
-		component: () => import('@/components/home.vue'),
+		component: () => import(/* webpackChunkName: "login_home_welcome" */ '@/components/home.vue'),
 		redirect:'/welcome',//到这个页面重定向到welcome页面
 		children:[
-			{path:'/welcome',component:()=> import('@/components/Welcome.vue')},
-			{path:'/users',component:()=> import('@/components/user/User.vue')},
-			{path:'/rights',component:()=>import('@/components/power/Rights.vue')},
-			{path:'/roles',component:()=>import('@/components/power/Roles.vue')},
-			{path:'/categories',component:()=>import('@/components/goods/Cate.vue')},
-			{path:'/params',component:()=>import('@/components/goods/Params.vue')},
-			{path:'/goods',component:()=>import('@/components/goods/List.vue')},
-			{path:'/goods/add',component:()=>import('@/components/goods/Add.vue')},
-			{path:'/orders',component:()=>import('@/components/order/Order.vue')},
-			{path:'/reports',component:()=>import('@/components/report/report.vue')}
+			{path:'/welcome',component:()=>import(/* webpackChunkName: "login_home_welcome" */ '@/components/Welcome.vue')},
+			
+			{path:'/users',component:()=> import(/* webpackChunkName: "users_rights_roles" */ '@/components/user/User.vue')},
+			{path:'/rights',component:()=>import(/* webpackChunkName: "users_rights_roles" */ '@/components/power/Rights.vue')},
+			{path:'/roles',component:()=>import(/* webpackChunkName: "users_rights_roles" */ '@/components/power/Roles.vue')},
+			
+			{path:'/categories',component:()=>import(/* webpackChunkName: "categories_params" */ '@/components/goods/Cate.vue')},
+			{path:'/params',component:()=>import(/* webpackChunkName: "categories_params" */ '@/components/goods/Params.vue')},
+			
+			{path:'/goods',component:()=>import(/* webpackChunkName: "goods_goods_add" */ '@/components/goods/List.vue')},
+			{path:'/goods/add',component:()=>import(/* webpackChunkName: "goods_goods_add" */ '@/components/goods/Add.vue')},
+			
+			{path:'/orders',component:()=>import(/* webpackChunkName: "orders_reports" */ '@/components/order/Order.vue')},
+			{path:'/reports',component:()=>import(/* webpackChunkName: "orders_reports" */ '@/components/report/report.vue')}
 		]
 	}
 ]

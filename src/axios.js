@@ -14,6 +14,10 @@ import axios from 'axios'
 import config from '@/config/config'
 import router from '@/router'
 import vue from 'vue'
+//导入NProgress包对应的JS和CSS
+import NProgress from 'nprogress'
+import 'nprogress/nprogress.css'
+
 //判断是不是开发环境
 const baseUrl=process.env.NODE_ENV==='development'?config.baseUrl.dev:config.baseUrl.pro
 
@@ -40,10 +44,16 @@ class HttpRequest{
     interceptors(instance,url){
         //实例拦截请求使用配置config
         instance.interceptors.request.use((config)=>{
+			//展示进度条NProgress.start()
+			//最好不要写在拦截器上，一个页面如果有多个请求，
+			//会触发多次，最好写到beforEach内
+			NProgress.start()
             //拦截和处理config
             return config
         })
         instance.interceptors.response.use((res)=>{
+			//隐藏进度条NProgress.done()
+			NProgress.done()
             //处理响应
             return res
         },(error)=>{
