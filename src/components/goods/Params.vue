@@ -338,7 +338,7 @@
 			 },
 			 //根据ID删除参数
 			 async removeParams(attrid){
-				 const result = await this.$confirm('此操作将永久删除该参数, 是否继续?', '提示', {
+				const result = await this.$confirm('此操作将永久删除该参数, 是否继续?', '提示', {
 				 	confirmButtonText: '确定',
 				 	cancelButtonText: '取消',
 				 	type: 'warning'
