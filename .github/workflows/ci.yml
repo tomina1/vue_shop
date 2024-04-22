@@ -83,6 +83,6 @@ jobs:
         # uses: actions/deploy-pages@v2 #自动部署
         uses: peaceiris/actions-gh-pages@v3 #部署并创建 gh-pages 分支
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
           force_orphan: true
