@@ -18,7 +18,7 @@ on:
 
 # 设置权限(文件可以被读写修改的)
 permissions:
-  contens: write
+  contents: write
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
