@@ -2,7 +2,7 @@
 
 name: CI
 
-run-name:${{ github.actor }} is update repo, start building...
+run-name: ${{ github.actor }} is update repo, start building...
 
 # 运行触发器
 on:
