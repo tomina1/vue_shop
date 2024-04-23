@@ -1,6 +1,6 @@
 export default{
     baseUrl:{
-        dev:"https://www.liulongbin.top:8888/api/private/v1/",
-        pro:"https://www.liulongbin.top:8888/api/private/v1/"
+        dev:"http://8.210.232.1:8800/api/private/v1/",
+        pro:"http://8.210.232.1:8800/api/private/v1/"
     }
 }
