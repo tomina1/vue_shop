@@ -85,8 +85,8 @@ jobs:
     steps:
     # 部署
     - name: Deploy to Github Pages
-      # uses: actions/deploy-pages@v2 #自动部署
-      uses: peaceiris/actions-gh-pages@v3 #部署并创建 gh-pages 分支
+      # uses: actions/deploy-pages@v2 #自动部署, 部署并创建 gh-pages 分支
+      uses: peaceiris/actions-gh-pages@v3 
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./dist
