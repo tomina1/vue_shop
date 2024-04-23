@@ -86,8 +86,9 @@ jobs:
     # 部署
     - name: Deploy to Github Pages
       # uses: actions/deploy-pages@v2 #自动部署, 部署并创建 gh-pages 分支
-      uses: peaceiris/actions-gh-pages@v3 
+      uses: JamesIves/github-pages-deploy-action@4.1.4
       with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./dist
-        force_orphan: true
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        BRANCH: gh-pages
+        FOLDER: build
+        CLEAN: true
