@@ -84,8 +84,9 @@ jobs:
     needs: build
     steps:
       - name: Downloading artifacts ....
-        uses: actions/upload-pages-artifact@v2
+        uses: actions/download-artifact@v2
         with:
+          name: prod-files
           path: ./dist
 
       # 部署
