@@ -74,7 +74,7 @@ jobs:
       
       # 上传构建物
       - name: Uploading build artifacts ...
-        uses: actions/upload-pages-artifact@v2
+        uses: actions/upload-artifact@v2
         with:
           name: prod-files
           path: ./dist
