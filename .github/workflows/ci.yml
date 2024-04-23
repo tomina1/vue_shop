@@ -85,11 +85,11 @@ jobs:
     steps:
     # 部署
     - name: Deploy to Github Pages
-      # uses: actions/deploy-pages@v2 #自动部署, 部署并创建 gh-pages 分支
-      uses: peaceiris/actions-gh-pages@v4
+      uses: actions/deploy-pages@v2 #自动部署, 部署并创建 gh-pages 分支
+      # uses: peaceiris/actions-gh-pages@v4
       with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./dist
+        token:  ${{ secrets.GITHUB_TOKEN }}
+        # github_token: ${{ secrets.GITHUB_TOKEN }}
         # publish_dir: ./public
-        force_orphan: true
-        enable_jekyll: true
+        # force_orphan: true
+        # enable_jekyll: true
