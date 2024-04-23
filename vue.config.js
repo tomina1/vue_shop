@@ -1,5 +1,5 @@
 module.exports={
-	publicPath: "./vue_shop",
+	publicPath: "./",
 	chainWebpack:config=>{
 		//发布模式
 		config.when(process.env.NODE_ENV==='production',config=>{
